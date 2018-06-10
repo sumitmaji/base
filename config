@@ -1,0 +1,3 @@
+IMAGE_NAME=sumit/base
+REPO_NAME=base
+CONTAINER_NAME=base

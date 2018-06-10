@@ -1,3 +1,3 @@
 #!/bin/bash
-
-docker build -t sumit/base:latest .
+source config
+docker build -t sumit/$REPO_NAME .
