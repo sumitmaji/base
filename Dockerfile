@@ -13,7 +13,8 @@ RUN apt-get update \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD scripts /container/
+RUN mkdir -p /container/scripts
+ADD ./scripts/* /container/scripts/
 RUN /container/scripts/setup.sh
 
 VOLUME ["/usr/local/repository"]
