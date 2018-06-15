@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:xenial
 MAINTAINER Sumit Kumar Maji
 
 RUN apt-get update \
@@ -13,8 +13,7 @@ RUN apt-get update \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD . /container/
+COPY ./scripts /container/
 RUN /container/scripts/setup.sh
 
 VOLUME ["/usr/local/repository"]
-
