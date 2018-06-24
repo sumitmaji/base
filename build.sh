@@ -1,5 +1,5 @@
 #!/bin/bash
-source config
+source configu
 docker build -t $IMAGE_NAME .
 if [ $? -eq 0 ]
 then
