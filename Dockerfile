@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:trusty
 MAINTAINER Sumit Kumar Maji
 
 RUN apt-get update \
