@@ -1,5 +1,5 @@
 IMAGE_NAME=sumit/base-trusty
 REGISTRY=master.cloud.com:5000
-REPO_NAME=base-trusty
+REPO_NAME=$REGISTRY/base-trusty
 CONTAINER_NAME=base-trusty
 DEPLOY=false
